@@ -108,4 +108,3 @@ Understand **Master Node**, **Worker Node**, and key services like **etcd, API S
 ⭐ **Star this repo** and begin your Kubernetes mastery today!
 
 Happy Learning! 🙌
-
