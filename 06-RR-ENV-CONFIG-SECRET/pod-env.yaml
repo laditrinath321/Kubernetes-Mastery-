@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: environment
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    env:
+      - name: Course
+        value: AWS DevOps
+      - name: Trainer
+        value: "Madhu kiran Gorekar"
+      - name: Institute 
+        value: MindCircuit 

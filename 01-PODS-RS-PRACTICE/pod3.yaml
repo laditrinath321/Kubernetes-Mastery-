@@ -1,0 +1,17 @@
+
+ kubectl run pod2 --image nginx --dry-run -o yaml
+
+ =========
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod2
+  labels:
+    run: pod2
+  
+spec:
+  containers:
+  - image: nginx
+    name: pod2

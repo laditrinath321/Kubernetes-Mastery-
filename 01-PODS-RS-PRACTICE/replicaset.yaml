@@ -1,0 +1,27 @@
+
+---
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: fb-rs
+  labels:
+    app: facebook-insta
+    env: lab
+spec:
+  selector:
+    matchLabels:
+      app: facebook
+  replicas: 1
+  template:
+    metadata:
+      name: fbpod
+      labels:
+        app: facebook
+        env: lab 
+    spec:
+      containers:
+        - name: fbcont1
+          image: tomcat
+   
+    
+
